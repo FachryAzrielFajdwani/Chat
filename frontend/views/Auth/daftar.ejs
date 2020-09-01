@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Daftar</title>
+</head>
+
+<body>
+    <div class="form">
+        <form action="<%= baseUrl %>/daftar" method="post" id="form-c">
+            <input type="text" name="nama" required><br>
+            <input type="password" name="pw" required><br>
+            <input type="text" name="captcha" required><input type="button" value="<%= captcha %>"><br>
+            <input type="submit" value="Submit">
+            <p><%= respon %></p>
+        </form>
+        <a href="<%= baseUrl %>/masuk">Masuk</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk</title>
+</head>
+<body>
+    <form action="<%= baseUrl %>/masuk" method="post">
+        <input type="text" name="nama" required><br>
+        <input type="password" name="pw" required><br>
+        <input type="text" name="captcha" required><input type="button" value="<%= captcha %> "><br>
+        <input type="submit" value="Submit">
+    </form>
+    <% if (messages.error) { %>
+        <%= messages.error %>
+    <% } %>
+    <p><%= respon %> </p>
+    <a href="<%= baseUrl %>/daftar">Daftar</a>
+</body>
+</html>
